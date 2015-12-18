@@ -14,4 +14,9 @@
 
 .titleWord1 {
 	font-family: 'Bangers', cursive;
+	letter-spacing: 0.1em;
+}
+
+.page-description {
+	font-family: 'Alegreya', serif;
 }
