@@ -1,11 +1,8 @@
 /* Additional CSS classes for tweaks to the base Casper theme */
 
-/* Special styles when overlaid on an image*/
-.main-nav.overlay {
-    /* Add a blackish orb around the center of the image to make the white title text readable */
-    height: 100%;
-	margin-top: -20px;
-	background: radial-gradient(black 0%, rgba(0,0,0,0.5) 20%, rgba(255,255,255,0) 40%, rgba(255,255,255,0.1) 60%);
+/* Add a blackish orb around the center of the image to make the white title text readable */
+.blackOrb {
+	background-image: radial-gradient(black 0%, rgba(0,0,0,0.5) 13%, rgba(255,255,255,0) 40%, rgba(255,255,255,0.1) 100%)
 }
 
 .titleWord0 {
