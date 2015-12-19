@@ -18,6 +18,14 @@
 	font-family: 'Alegreya', serif;
 }
 
+.post-title {
+	text-align: center;
+}
+
+.main-header {
+    height: 40vh;
+}
+
 .disqusLink {
 	display: inline-block;
 	margin-left: 8px;
