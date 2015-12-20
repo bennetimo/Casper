@@ -25,8 +25,38 @@
     transition: all 0.5s ease;
 }
 
+/*pre[class*="language-"] {
+    padding-top: 2em !important;
+}*/
+
 div.prism-show-language > div.prism-show-language-label[data-language] {
-    font-size: 0.2em !important;
+    font-size: 0.6em !important;
+}
+
+div.prism-show-filename {
+    margin-left: 1px;
+    color: black;
+    background-color: #CFCFCF;
+    display: inline-block;
+    position: absolute;
+    bottom: auto;
+    left: auto;
+    left: 0;
+    width: auto;
+    height: auto;
+    font-size: 0.6em;
+    border-radius: 0 5px 5px 0px;
+    padding: 0 0.5em;
+    text-shadow: none;
+    z-index: 1;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
 }
 
 .grey-box {
