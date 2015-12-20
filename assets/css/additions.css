@@ -5,6 +5,35 @@
 	background-image: radial-gradient(black 0%, rgba(0,0,0,0.5) 13%, rgba(255,255,255,0) 40%, rgba(255,255,255,0.1) 100%)
 }
 
+.back-button {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    height: 38px;
+    padding: 0 15px;
+    border-style: solid;
+    border-width: 1px;
+    opacity: 1;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 35px;
+    white-space: nowrap;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+}
+
+.nav-closed .no-cover .back-button {
+    border-color: #BFC8CD;
+    color: #9EABB3;
+}
+.nav-closed .back-button {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
 .titleWord0 {
 	font-family: 'Quicksand', sans-serif;
 }
