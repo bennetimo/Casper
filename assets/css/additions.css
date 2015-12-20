@@ -25,6 +25,12 @@
     transition: all 0.5s ease;
 }
 
+.reading-time {
+    font-style: italic;
+    text-align: center;
+    font-size: 1em;
+}
+
 .nav-closed .no-cover .back-button {
     border-color: #BFC8CD;
     color: #9EABB3;
