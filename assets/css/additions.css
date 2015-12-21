@@ -29,6 +29,35 @@
     background-attachment: fixed;
 }
 
+.nav-closed .back-button {
+    position: fixed;
+    top: 35px;
+    left: 40px;
+    z-index: 10;
+}
+
+.nav-closed .menu-button {
+    position: fixed;
+    top: 35px;
+    right: 40px;
+    z-index: 10
+}
+
+.copyright {
+    width: 30%;
+}
+
+.social-links {
+    width: 40%;
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+.poweredby {
+    width: 30%;
+}
+
 /*pre[class*="language-"] {
     padding-top: 2em !important;
 }*/
