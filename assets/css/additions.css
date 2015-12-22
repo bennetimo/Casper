@@ -61,6 +61,10 @@
     padding-top: 2em !important;
 }*/
 
+pre[class*="language-"] {
+    margin: 1.5em 0 !important;
+}
+
 div.prism-show-language > div.prism-show-language-label[data-language] {
     font-size: 0.6em !important;
 }
