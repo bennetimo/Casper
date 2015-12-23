@@ -1,4 +1,4 @@
-/* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript+bash+css-extras+docker+git+handlebars+haskell+http+java+less+markdown+matlab+nginx+puppet+r+scala+sql+vim+wiki+yaml&plugins=show-language */
+/* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript+bash+c+coffeescript+ruby+css-extras+docker+git+handlebars+haskell+java+markdown+matlab+nginx+perl+python+r+scala+sql+vim+wiki+yaml&plugins=autolinker+show-language */
 /**
  * okaidia theme for JavaScript, CSS and HTML
  * Loosely based on Monokai textmate theme by http://www.monokai.nl/
@@ -121,6 +121,9 @@ pre[class*="language-"] {
 	cursor: help;
 }
 
+.token a {
+	color: inherit;
+}
 div.prism-show-language {
 	position: relative;
 }
