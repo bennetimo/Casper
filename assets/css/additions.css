@@ -1,197 +1,215 @@
 /* Additional CSS classes for tweaks to the base Casper theme */
 
+#disqus_thread
+{
+  margin:4rem auto;
+  max-width:710px;
+  width:80%;
+}
+
+.attributed-image
+{
+  font-size:.4em;
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+
+.attributed-image a
+{
+  text-decoration:none;
+}
+
+.attributed-image img
+{
+  margin-bottom:0;
+  padding-bottom:0;
+  width:100%;
+}
+
+.back-button
+{
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  border-radius:3px;
+  border-style:solid;
+  border-width:1px;
+  box-sizing:border-box;
+  display:inline-block;
+  float:left;
+  font-size:12px;
+  height:38px;
+  line-height:35px;
+  opacity:1;
+  padding:0 15px;
+  text-align:center;
+  text-transform:uppercase;
+  transition:all .5s ease;
+  white-space:nowrap;
+}
+
 /* Add a blackish orb around the center of the image to make the white title text readable */
-.blackOrb {
-	background-image: radial-gradient(black 0%, rgba(0,0,0,0.5) 13%, rgba(255,255,255,0) 40%, rgba(255,255,255,0.1) 100%)
+.blackOrb
+{
+  background-image:radial-gradient(black0%,rgba(0,0,0,0.5) 13% rgba(255,255,255,0) 40% rgba(255,255,255,0.1) 100%);
 }
 
-.back-button {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    display: inline-block;
-    float: left;
-    height: 38px;
-    padding: 0 15px;
-    border-style: solid;
-    border-width: 1px;
-    opacity: 1;
-    text-align: center;
-    font-size: 12px;
-    text-transform: uppercase;
-    line-height: 35px;
-    white-space: nowrap;
-    border-radius: 3px;
-    transition: all 0.5s ease;
+.copyright,.poweredby
+{
+  width:30%;
 }
 
-.nav-closed .back-button {
-    top: 35px;
-    left: 40px;
-    z-index: 10;
+.disqusLink
+{
+  border-left:#d5dbde 1px solid;
+  display:inline-block;
+  font-size:1.3rem;
+  margin-left:8px;
+  padding-left:12px;
+  text-transform:uppercase;
+  white-space:nowrap;
 }
 
-.nav-closed .no-cover .back-button:hover {
-    border-color: #555;
-    color: #555;
+.grey-box
+{
+  background-color:#fafafa;
+  border:1px solid #f5f5f5;
+  border-radius:3px;
 }
 
-.nav-closed .menu-button {
-    top: 35px;
-    right: 40px;
-    z-index: 10
+.main-header
+{
+  height:40vh;
 }
 
-@media only screen and (max-width: 500px) {
-    .back-button {
-        padding: 0 5px;
-        border-radius: 0;
-        border-width: 0;
-        color: #2e2e2e;
-        background: transparent;
-    }
-    .back-button:hover {
-        color: #2e2e2e;
-        border-color: transparent;
-        background: none;
-    }
-    .no-cover .main-nav.overlay .back-button {
-        border: none;
-    }
-
-    .main-nav.overlay .back-button {
-        border-color: transparent;
-    }
+.nav-closed .back-button
+{
+  border-color:rgba(255,255,255,0.6);
+  color:#fff;
+  left:40px;
+  top:35px;
+  z-index:10;
 }
 
-.copyright {
-    width: 30%;
+.nav-closed .menu-button
+{
+  right:40px;
+  top:35px;
+  z-index:10;
 }
 
-.social-links {
-    width: 40%;
-    display: block;
-    float: left;
-    text-align: center;
+.nav-closed .no-cover .back-button
+{
+  border-color:#BFC8CD;
+  color:#9EABB3;
 }
 
-.poweredby {
-    width: 30%;
+.nav-closed .no-cover .back-button:hover
+{
+  border-color:#555;
+  color:#555;
 }
 
-/*pre[class*="language-"] {
-    padding-top: 2em !important;
-}*/
-
-pre[class*="language-"] {
-    margin: 1.5em 0 !important;
+.page-description
+{
+  font-family:Asap, sans-serif;
+  font-size:1.1em;
+  font-style:italic;
+  font-weight:700;
+  text-shadow:#000 10px 10px 30px;
 }
 
-div.prism-show-language > div.prism-show-language-label[data-language] {
-    font-size: 0.6em !important;
+.post-title
+{
+  text-align:center;
 }
 
-div.prism-show-filename {
-    margin-left: 1px;
-    color: black;
-    background-color: #CFCFCF;
-    display: inline-block;
-    position: absolute;
-    bottom: auto;
-    left: auto;
-    left: 0;
-    width: auto;
-    height: auto;
-    font-size: 0.6em;
-    border-radius: 0 5px 5px 0px;
-    padding: 0 0.5em;
-    text-shadow: none;
-    z-index: 1;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-    transform: none;
+.reading-time
+{
+  font-size:1em;
+  font-style:italic;
+  text-align:center;
 }
 
-.grey-box {
-    border: 1px solid #f5f5f5;
-    background-color: #fafafa;
-    border-radius: 3px;
+.social-links
+{
+  display:block;
+  float:left;
+  text-align:center;
+  width:40%;
 }
 
-.reading-time {
-    font-style: italic;
-    text-align: center;
-    font-size: 1em;
+.titleWord0
+{
+  font-family:Quicksand, sans-serif;
 }
 
-.nav-closed .no-cover .back-button {
-    border-color: #BFC8CD;
-    color: #9EABB3;
-}
-.nav-closed .back-button {
-    color: #fff;
-    border-color: rgba(255, 255, 255, 0.6);
+.titleWord1
+{
+  font-family:Bangers, cursive;
+  letter-spacing:.1em;
 }
 
-.titleWord0 {
-	font-family: 'Quicksand', sans-serif;
+div.prism-show-filename
+{
+  -moz-box-shadow:none;
+  -moz-transform:none;
+  -ms-transform:none;
+  -o-transform:none;
+  -webkit-box-shadow:none;
+  -webkit-transform:none;
+  background-color:#CFCFCF;
+  border-radius:0 5px 5px 0;
+  bottom:auto;
+  box-shadow:none;
+  color:#000;
+  display:inline-block;
+  font-size:.6em;
+  height:auto;
+  left:0;
+  margin-left:1px;
+  padding:0 .5em;
+  position:absolute;
+  text-shadow:none;
+  transform:none;
+  width:auto;
+  z-index:1;
 }
 
-.titleWord1 {
-	font-family: 'Bangers', cursive;
-	letter-spacing: 0.1em;
+div.prism-show-language > div.prism-show-language-label[data-language]
+{
+  font-size:.6em!important;
 }
 
-.attributed-image {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    font-size: 0.4em;
+pre[class*="language-"]
+{
+  margin:1.5em 0!important;
 }
 
-.attributed-image a {
-    text-decoration: none;
-}
-
-.attributed-image img {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    width: 100%;
-}
-
-.page-description {
-	font-family: 'Asap', sans-serif;
-    font-style: italic;
-    text-shadow: #000 10px 10px 30px;
-    font-weight: bold;
-    font-size: 1.1em;
-}
-
-.post-title {
-	text-align: center;
-}
-
-.main-header {
-    height: 40vh;
-}
-
-.disqusLink {
-	display: inline-block;
-	margin-left: 8px;
-	padding-left: 12px;
-	border-left: #d5dbde 1px solid;
-	text-transform: uppercase;
-	font-size: 1.3rem;
-	white-space: nowrap;
-}
-
-#disqus_thread {
-	width: 80%;
-    max-width: 710px;
-    margin: 4rem auto;
+@media only screen and max-width 500px {
+  .back-button
+  {
+    background:transparent;
+    border-radius:0;
+    border-width:0;
+    color:#2e2e2e;
+    padding:0 5px;
+  }
+  
+  .back-button:hover
+  {
+    background:none;
+    border-color:transparent;
+    color:#2e2e2e;
+  }
+  
+  .main-nav.overlay .back-button
+  {
+    border-color:transparent;
+  }
+  
+  .no-cover .main-nav.overlay .back-button
+  {
+    border:none;
+  }
 }
