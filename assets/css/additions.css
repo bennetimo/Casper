@@ -216,4 +216,12 @@ pre[class*="language-"]
   {
     border:none;
   }
+
+  .page-description {
+    margin-top: 50px;
+  }
+
+  .page-title {
+    margin-top: -15px;
+  }
 }
