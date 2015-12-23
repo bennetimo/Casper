@@ -143,7 +143,11 @@ div.prism-show-filename {
 }
 
 .page-description {
-	font-family: 'Alegreya', serif;
+	font-family: 'Asap', sans-serif;
+    font-style: italic;
+    text-shadow: #000 10px 10px 30px;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 .post-title {
