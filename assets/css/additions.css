@@ -42,6 +42,28 @@
     z-index: 10
 }
 
+@media only screen and (max-width: 500px) {
+    .back-button {
+        padding: 0 5px;
+        border-radius: 0;
+        border-width: 0;
+        color: #2e2e2e;
+        background: transparent;
+    }
+    .back-button:hover {
+        color: #2e2e2e;
+        border-color: transparent;
+        background: none;
+    }
+    .no-cover .main-nav.overlay .back-button {
+        border: none;
+    }
+
+    .main-nav.overlay .back-button {
+        border-color: transparent;
+    }
+}
+
 .copyright {
     width: 30%;
 }
