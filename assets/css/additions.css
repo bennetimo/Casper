@@ -110,6 +110,12 @@
   color:#555;
 }
 
+.post-date {
+  margin-left: 0px;
+  padding-left: 0px;
+  border-left: none;
+}
+
 .page-description
 {
   font-family:Asap, sans-serif;
