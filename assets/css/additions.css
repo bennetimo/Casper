@@ -70,6 +70,10 @@
   white-space:nowrap;
 }
 
+.email-link, .url-link {
+    color:#fff;
+}
+
 .grey-box
 {
   background-color:#fafafa;
