@@ -192,12 +192,20 @@ div.prism-show-filename
 
 div.prism-show-language > div.prism-show-language-label[data-language]
 {
-  font-size:.6em!important;
+  font-size:.6em !important;
+  margin-top: 1px !important;
+  margin-right: 1px !important;
 }
 
 pre[class*="language-"]
 {
-  margin:1.5em 0!important;
+  padding:1em 1em!important;
+  margin-bottom: 1.5em !important;
+}
+
+img[alt$="-fullwidth"]{ 
+  max-width:  100%; 
+  display: block;
 }
 
 @media only screen and (max-width: 500px) {
