@@ -9,15 +9,16 @@ into the {body} of the default.hbs template --}}
             <h1 class="site-title">
                 {{#if @blog.logo}}
                     <img class="site-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
-                {{else}}
-                    {{!-- {{@blog.title}} --}}
-                    <div class="vertical blackOrb">
-                        <div class="main-header-content inner">
-                            <h1 class="page-title">{{styleTitleWords @blog.title}}</h1>
-                            <h2 class="page-description">{{@blog.description}}</h2>
-                        </div>
-                    </div>
                 {{/if}}
+                    {{!-- {{@blog.title}} --}}
+                <div class="vertical blackOrb">
+                    <div class="main-header-content inner">
+                        <h1 class="page-title">
+                            <!-- Page title injected by jquery later-->
+                        </h1>
+                        <h2 class="page-description">{{@blog.description}}</h2>
+                    </div>
+                </div>
             </h1>
             <h2 class="site-description">{{@blog.description}}</h2>
         </div>
