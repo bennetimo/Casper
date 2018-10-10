@@ -51,7 +51,7 @@
 /* Add a blackish orb around the center of the image to make the white title text readable */
 .blackOrb
 {
-    background-image: radial-gradient(black 0%, rgba(0,0,0,0.5) 13%, rgba(255,255,255,0) 40%, rgba(255,255,255,0.1) 100%)
+    background-image: radial-gradient(black -15%, rgba(0, 0, 0, 0.4) 2%, rgba(140, 30, 30, 0) 56%, rgba(255,255,255,0) 100%)
 }
 
 .copyright,.poweredby
@@ -61,13 +61,12 @@
 
 .disqusLink
 {
-  border-left:#d5dbde 1px solid;
-  display:inline-block;
-  font-size:1.3rem;
-  margin-left:8px;
-  padding-left:12px;
-  text-transform:uppercase;
-  white-space:nowrap;
+  border-left: #d5dbde 1px solid;
+  font-size: 1em;
+  padding-left: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 33px;
 }
 
 .email-link, .url-link {
@@ -120,17 +119,10 @@
   border-left: none;
 }
 
-.page-description
-{
-  font-family:Asap, sans-serif;
-  font-size:1em;
-  font-style:italic;
-  font-weight:700;
-  text-shadow:#000 10px 10px 30px;
-}
-
 .page-title {
     text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    font-size: 7rem;
+    padding-top: 2em;
 }
 
 .post-title
@@ -233,10 +225,6 @@ img[alt$="-fullwidth"]{
   .no-cover .main-nav.overlay .back-button
   {
     border:none;
-  }
-
-  .page-description {
-    margin-top: 50px;
   }
 
   .page-title {
