@@ -44,12 +44,30 @@
     margin: 0 -2vw 0 1vw;
 }
 
+.floating-header {
+    height: 45px;
+}
+
+.floating-header-share-fb, .floating-header-share-tw {
+    height: 45px;
+    width: 45px;
+}
+
+.floating-header-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
 /* The text on the preview cards and at the top of each post */
 .reading-time
 {
     font-size:1em;
     font-style:italic;
     text-align:center;
+}
+
+.progress {
+    color: red;
 }
 
 .post-full-header {
@@ -64,6 +82,9 @@
 
 .post-full-meta a {
     text-decoration: none;
+}
+.post-full-meta-date {
+    color:#3f90af;
 }
 
 .post-full-title {
