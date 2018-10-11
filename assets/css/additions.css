@@ -1,10 +1,152 @@
 /* Additional CSS classes for tweaks to the base Casper theme */
 
+/* Header bar at the top of each page */
+.site-header
+{
+    background: #3f90af no-repeat 100%;
+    position: relative;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #fff;
+    background-size: cover;
+}
+
+/* Title for the page */
+.page-title {
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    font-size: 7rem;
+    padding-top: 2em;
+}
+
+/* The main comments panel at the bottom of a post */
 #disqus_thread
 {
-  margin:4rem auto;
-  max-width:710px;
-  width:80%;
+    padding-left:50px;
+    padding-right:50px;
+}
+
+/* The link to the comments on a preview card */
+.disqusLink
+{
+    border-left: #d5dbde 1px solid;
+    font-size: 1em;
+    padding-left: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 33px;
+}
+
+/* Make the main post column a little narrower */
+.kg-card-markdown {
+    max-width: 90%;
+}
+
+/* Add a blackish orb around the center of the image to make the white title text readable */
+.blackOrb
+{
+    background-image: radial-gradient(black -15%, rgba(0, 0, 0, 0.4) 2%, rgba(140, 30, 30, 0) 56%, rgba(255,255,255,0) 100%)
+}
+
+.date-divider {
+    margin: 0 -2vw 0 1vw;
+}
+
+/* The text on the preview cards and at the top of each post */
+.reading-time
+{
+    font-size:1em;
+    font-style:italic;
+    text-align:center;
+}
+
+.post-full-header {
+    padding: 3vw 8.5vw 3vw 8.5vw;
+}
+
+.post-full-meta a {
+    color: #9EABB3;
+    padding: 0 1vw 0 1vw;
+    text-transform: lowercase;
+}
+
+.post-full-meta a {
+    text-decoration: none;
+}
+
+.post-full-title {
+    margin-bottom: 5px;
+}
+
+/* The code runner blog title, each word separately styled */
+.titleWord0
+{
+    font-family:Quicksand, sans-serif;
+}
+
+/* The code runner blog title, each word separately styled */
+.titleWord1
+{
+    font-family:Bangers, cursive;
+    letter-spacing:.1em;
+}
+
+/* Grey box to highlight content */
+.grey-box
+{
+    background-color:#fafafa;
+    border:1px solid #f5f5f5;
+    border-radius:3px;
+}
+
+.post-full-content img, .post-full-content video {
+    max-width: 100%;
+}
+
+.post-content {
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.01rem;
+    font-size: 1.8rem;
+    line-height: 1.75em;
+    color: #3A4145;
+    text-rendering: geometricPrecision;
+}
+
+.post-full-content blockquote {
+    margin: 0 0 1.5em;
+    padding: 0 1.5em;
+    border-left: #4A4A4A 0.4em solid;
+}
+
+/* Markup blocks from prism.js */
+pre[class*="language-"]
+{
+    padding:1em 1em!important;
+    margin-bottom: 1.5em !important;
+}
+
+div.code-toolbar > .toolbar {
+    position: absolute !important;
+    top: 0px !important;
+    right: 0px !important;
+    font-size: 0.6em !important;
+    color: black !important;
+    background-color: #CFCFCF !important;
+    border-radius: 0 0 0 5px !important;
+    transition: unset !important;
+    opacity: 1 !important;
+}
+
+div.code-toolbar > .toolbar span {
+    padding: 0 .5em !important;
+    background: none !important;
+    box-shadow: none !important;
+    color:#000 !important;
+    font-weight: 500 !important;
+}
+
+img[alt$="-fullwidth"]{ 
+    max-width:  100%;
+    display: block;
 }
 
 .attributed-image
@@ -18,216 +160,4 @@
 .attributed-image a
 {
   text-decoration:none;
-}
-
-.attributed-image img
-{
-  margin-bottom:0;
-  padding-bottom:0;
-  width:100%;
-}
-
-.back-button
-{
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-  border-radius:3px;
-  border-style:solid;
-  border-width:1px;
-  box-sizing:border-box;
-  display:inline-block;
-  float:left;
-  font-size:12px;
-  height:38px;
-  line-height:35px;
-  opacity:1;
-  padding:0 15px;
-  text-align:center;
-  text-transform:uppercase;
-  transition:all .5s ease;
-  white-space:nowrap;
-}
-
-/* Add a blackish orb around the center of the image to make the white title text readable */
-.blackOrb
-{
-    background-image: radial-gradient(black -15%, rgba(0, 0, 0, 0.4) 2%, rgba(140, 30, 30, 0) 56%, rgba(255,255,255,0) 100%)
-}
-
-.copyright,.poweredby
-{
-  width:30%;
-}
-
-.disqusLink
-{
-  border-left: #d5dbde 1px solid;
-  font-size: 1em;
-  padding-left: 12px;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 33px;
-}
-
-.email-link, .url-link {
-    color:#fff;
-}
-
-.grey-box
-{
-  background-color:#fafafa;
-  border:1px solid #f5f5f5;
-  border-radius:3px;
-}
-
-.main-header
-{
-  height:40vh;
-}
-
-.nav-closed .back-button
-{
-  border-color:rgba(255,255,255,0.6);
-  color:#fff;
-  left:40px;
-  top:35px;
-  z-index:10;
-}
-
-.nav-closed .menu-button
-{
-  right:40px;
-  top:35px;
-  z-index:10;
-}
-
-.nav-closed .no-cover .back-button
-{
-  border-color:#BFC8CD;
-  color:#9EABB3;
-}
-
-.nav-closed .no-cover .back-button:hover
-{
-  border-color:#555;
-  color:#555;
-}
-
-.post-date {
-  margin-left: 0px;
-  padding-left: 0px;
-  border-left: none;
-}
-
-.page-title {
-    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-    font-size: 7rem;
-    padding-top: 2em;
-}
-
-.post-title
-{
-  text-align:center;
-}
-
-.reading-time
-{
-  font-size:1em;
-  font-style:italic;
-  text-align:center;
-}
-
-.social-links
-{
-  display:block;
-  float:left;
-  text-align:center;
-  width:40%;
-}
-
-.titleWord0
-{
-  font-family:Quicksand, sans-serif;
-}
-
-.titleWord1
-{
-  font-family:Bangers, cursive;
-  letter-spacing:.1em;
-}
-
-div.prism-show-filename
-{
-  -moz-box-shadow:none;
-  -moz-transform:none;
-  -ms-transform:none;
-  -o-transform:none;
-  -webkit-box-shadow:none;
-  -webkit-transform:none;
-  background-color:#CFCFCF;
-  border-radius:0 5px 5px 0;
-  bottom:auto;
-  box-shadow:none;
-  color:#000;
-  display:inline-block;
-  font-size:.6em;
-  height:auto;
-  left:0;
-  margin-left:1px;
-  padding:0 .5em;
-  position:absolute;
-  text-shadow:none;
-  transform:none;
-  width:auto;
-  z-index:1;
-}
-
-div.prism-show-language > div.prism-show-language-label[data-language]
-{
-  font-size:.6em !important;
-  margin-top: 1px !important;
-  margin-right: 1px !important;
-}
-
-pre[class*="language-"]
-{
-  padding:1em 1em!important;
-  margin-bottom: 1.5em !important;
-}
-
-img[alt$="-fullwidth"]{ 
-  max-width:  100%; 
-  display: block;
-}
-
-@media only screen and (max-width: 500px) {
-  .back-button
-  {
-    background:transparent;
-    border-radius:0;
-    border-width:0;
-    color:#2e2e2e;
-    padding:0 5px;
-  }
-  
-  .back-button:hover
-  {
-    background:none;
-    border-color:transparent;
-    color:#2e2e2e;
-  }
-  
-  .main-nav.overlay .back-button
-  {
-    border-color:transparent;
-  }
-  
-  .no-cover .main-nav.overlay .back-button
-  {
-    border:none;
-  }
-
-  .page-title {
-    margin-top: -15px;
-  }
 }
