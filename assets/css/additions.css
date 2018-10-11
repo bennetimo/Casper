@@ -11,13 +11,6 @@
     background-size: cover;
 }
 
-/* Title for the page */
-.page-title {
-    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-    font-size: 7rem;
-    padding-top: 2em;
-}
-
 /* The main comments panel at the bottom of a post */
 #disqus_thread
 {
@@ -75,6 +68,18 @@
 
 .post-full-title {
     margin-bottom: 5px;
+}
+
+/* Title for the page */
+.generated-styled-title {
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    font-size: 7rem;
+    padding-top: 2em;
+}
+
+.generated-styled-title.small-title {
+    text-shadow: none;
+    font-size: 1.5rem;
 }
 
 /* The code runner blog title, each word separately styled */
