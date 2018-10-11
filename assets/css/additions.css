@@ -157,6 +157,13 @@ footer.post-full-footer {
     border-left: #4A4A4A 0.4em solid;
 }
 
+/* Put the location icon above the location text */
+.icon-location:before {
+    margin-left: 15px;
+    display: block;
+    margin-top: -35px;
+}
+
 /* Markup blocks from prism.js */
 pre[class*="language-"]
 {
@@ -168,7 +175,6 @@ div.code-toolbar > .toolbar {
     position: absolute !important;
     top: 0px !important;
     right: 0px !important;
-    font-size: 0.6em !important;
     color: black !important;
     background-color: #CFCFCF !important;
     border-radius: 0 0 0 5px !important;
@@ -181,6 +187,13 @@ div.code-toolbar > .toolbar span {
     background: none !important;
     box-shadow: none !important;
     color:#000 !important;
+    font-weight: 500 !important;
+    margin: 5px !important;
+    font-size: 0.7em !important;
+}
+
+.post-full-content pre code {
+    font-size: 1.2em !important;
     font-weight: 500 !important;
 }
 
