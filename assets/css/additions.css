@@ -158,10 +158,10 @@ footer.post-full-footer {
 }
 
 /* Put the location icon above the location text */
-.icon-location:before {
+.icon-location {
     margin-left: 15px;
     display: block;
-    margin-top: -35px;
+    margin-top: -50px;
 }
 
 /* css trick to push the page anchors down a little bit to compensate for the fixed heading being at the top of the page
