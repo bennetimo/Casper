@@ -164,6 +164,18 @@ footer.post-full-footer {
     margin-top: -35px;
 }
 
+/* css trick to push the page anchors down a little bit to compensate for the fixed heading being at the top of the page
+   see https://css-tricks.com/hash-tag-links-padding/
+*/
+.kg-card-markdown h3::before {
+    display: block;
+    content: " ";
+    margin-top: -45px;
+    height: 45px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
 /* Markup blocks from prism.js */
 pre[class*="language-"]
 {
