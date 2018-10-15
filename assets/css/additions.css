@@ -30,7 +30,7 @@
 }
 
 /* Make the main post column a little narrower */
-.kg-card-markdown {
+.post-content {
     max-width: 90%;
 }
 
@@ -167,34 +167,35 @@ footer.post-full-footer {
 /* css trick to push the page anchors down a little bit to compensate for the fixed heading being at the top of the page
    see https://css-tricks.com/hash-tag-links-padding/
 */
-.kg-card-markdown h1::before {
+
+.post-content h1::before {
     display: block;
     content: " ";
-    margin-top: -45px;
+    /*margin-top: -45px;*/
     height: 45px;
     visibility: hidden;
     pointer-events: none;
 }
-.kg-card-markdown h2::before {
+.post-content h2::before {
     display: block;
     content: " ";
-    margin-top: -45px;
+    /*margin-top: -45px;*/
     height: 45px;
     visibility: hidden;
     pointer-events: none;
 }
-.kg-card-markdown h3::before {
+.post-content h3::before {
     display: block;
     content: " ";
-    margin-top: -45px;
+    /*margin-top: -45px;*/
     height: 45px;
     visibility: hidden;
     pointer-events: none;
 }
-.kg-card-markdown h4::before {
+.post-content h4::before {
     display: block;
     content: " ";
-    margin-top: -45px;
+    /*margin-top: -45px;*/
     height: 45px;
     visibility: hidden;
     pointer-events: none;
@@ -209,13 +210,13 @@ pre[class*="language-"]
 
 div.code-toolbar > .toolbar {
     position: absolute !important;
-    top: 0px !important;
+    top: 7px !important;
     right: 0px !important;
     color: black !important;
     background-color: #CFCFCF !important;
     border-radius: 0 0 0 5px !important;
     transition: unset !important;
-    opacity: 1 !important;
+    /* opacity: 1 !important; */
 }
 
 div.code-toolbar > .toolbar span {
