@@ -208,14 +208,20 @@ pre[class*="language-"]
     margin-bottom: 1.5em !important;
 }
 
+div.code-toolbar {
+    position: relative;
+    margin: auto;
+    overflow: unset;
+    width: 100%;
+}
+
 div.code-toolbar > .toolbar {
-    position: absolute !important;
-    top: 7px !important;
+    top: 7px!important;
     right: 0px !important;
     color: black !important;
     background-color: #CFCFCF !important;
     border-radius: 0 0 0 5px !important;
-    transition: unset !important;
+    /* transition: unset !important;*/
     /* opacity: 1 !important; */
 }
 
