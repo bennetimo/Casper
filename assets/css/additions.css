@@ -294,4 +294,9 @@ img[alt$="-fullwidth"]{
       font-weight: 500!important;
   }
 
+  .site-footer-nav {
+      -ms-flex-pack: center;
+      justify-content: center;
+  }
+
 }
