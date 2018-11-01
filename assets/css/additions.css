@@ -96,6 +96,11 @@
     margin-bottom: 5px;
 }
 
+.post-full-image {
+    height: 600px;
+    margin: 0 -3vw -165px;
+}
+
 footer.post-full-footer {
     border-top: #EBF2F6 1px solid;
 }
