@@ -304,4 +304,9 @@ img[alt$="-fullwidth"]{
       justify-content: center;
   }
 
+  .post-full-image {
+      margin-bottom: 4vw;
+      height: 270px;
+  }
+
 }
